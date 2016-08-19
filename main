@@ -1,0 +1,67 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int saldo;
+    int x1 = 0; // 200
+    int x2 = 0; // 100
+    int x3 = 0; // 50
+    int x4 = 0; // 20
+    int x5 = 0; // 10
+    int x6 = 0; // 5
+    int x7 = 0; // 2
+    int x8 = 0; // 1
+
+    cout << "Ingrese la cantidad de Dinero: ";
+    cin >> saldo;
+   // while (saldo != 0){
+    if(saldo>= 200){
+        x1 = saldo / 200;
+        saldo = saldo - (x1 * 200);
+    }
+    if (saldo >= 100){
+        x2 = saldo / 100;
+        saldo = saldo - (x2* 100);
+    }
+    if (saldo >= 50){
+        x3 = saldo / 50;
+        saldo = saldo - (x3* 50);
+    }
+    if (saldo >= 20){
+        x4 = saldo / 20;
+        saldo = saldo - (x4 *20);
+    }
+    if (saldo >= 10){
+        x5 = saldo / 10;
+        saldo = saldo - (x5 * 10);
+    }
+        if (saldo >= 5){
+        x6 = saldo / 5;
+        saldo = saldo - (x6 * 5);
+    }
+        if (saldo >= 2){
+        x7 = saldo / 2;
+        saldo = saldo - (x7 * 2);
+    }
+        if (saldo >= 1){
+        x8 = saldo;
+        saldo = saldo - x8;
+    }
+
+
+
+    cout << "Su vuelto es de: "<<saldo<< endl;
+    cout << "Monedas de 200 -> "<< x1<<endl;
+    cout << "Monedas de 100 -> "<< x2<<endl;
+    cout << "Monedas de 50 -> "<< x3<<endl;
+    cout << "Monedas de 20 -> "<< x4<<endl;
+    cout << "Monedas de 10 -> "<< x5<<endl;
+    cout << "Monedas de 5 -> "<< x6<<endl;
+    cout << "Monedas de 2 -> "<< x7<<endl;
+    cout << "Monedas de 1 -> "<< x8<<endl;
+
+    cout << "Hello world!" << endl;
+    return 0;
+}
